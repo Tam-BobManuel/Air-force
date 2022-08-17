@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+
+    body{}
+    .nav{
+        width: 100%;
+        height: 60px;
+        background-color: brown;
+    }
+    .navp{
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-size: 24px;
+        line-height: 55px;
+        float: left;
+        padding: 0px 20px;
+    }
+    .navulparent{
+        float: left;
+    }
+    .navliparent{
+        float: left;
+        list-style: none;
+        position: relative;
+    }
+
+    .navaparent,.navasub{
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-size: 14px;
+        padding: 22px 14px;
+        text-decoration: none;
+    }
+    .navulsub{
+        display: none;
+        position: absolute;
+        background-color: brown;
+        padding: 8px;
+        border-radius: 0px 0px 4px 4px ;
+    }
+    .navliparent:hover .navulsub{
+        display: block;
+    }
+
+    .navlisub{
+        width: 180px;
+        border-radius: 4px;
+        list-style-type: none;
+    }
+    .navasub{
+        padding: 12px 14px;
+    }
+    .navasub:hover{
+        padding: 12px 14px;
+        background-color: crimson;
+    }
+</style>
+    
+</head>
+<body>
+
+<nav class="nav">
+    <p class="navp">Tam</p>
+    <ul class="navulparent">
+        <li class="navliparent"><a class="navaparent" href="#">Home</a></li>
+        <li class="navliparent"><a class="navaparent" href="#">Portfolio</a></li>
+        <li class="navliparent"><a class="navaparent" href="#">About me</a></li>
+        <li class="navliparent"><a class="navaparent" href="#">Contact</a>
+            <ul class="navulsub">        
+                <li class="navlisub"><a class="navasub" href="#">Youtube</a></li>        
+                <li class="navlisub"><a class="navasub" href="#">Twitter</a></li>        
+                <li class="navlisub"><a class="navasub" href="#">Instagram</a></li>
+            </ul>
+        </li>
+        <li class="navliparent"><a class="navaparent" href="#">Link 5</a></li>
+        <li class="navliparent"><a class="navaparent" href="#">Link 6</a></li>
+    </ul>
+</nav>
+
+</body>
+</html>
